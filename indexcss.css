@@ -12,7 +12,7 @@
 					color: #000;
 				}
 img.college-logo-img {
-						animation: logoani 1s ease 0s 1 normal forwards;
+						  animation: logoani 1s ease 0s 1 normal forwards;
     					height: 8rem;
     					margin-left: 47px;
     					margin-top: 5px;
@@ -152,13 +152,13 @@ button.slick-next.slick-arrow {
 }
 
 .gallary-one img:hover{
-					animation: myAnim 2s ease 0s 1 normal forwards;
+					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .gallary-two img:hover{
-					animation: myAnim 2s ease 0s 1 normal forwards;
+					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .gallary-three img:hover{
-					animation: myAnim 2s ease 0s 1 normal forwards;
+					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .img_name_text{
 			margin: 0px 0px 20px 25px;
