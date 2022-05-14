@@ -15,8 +15,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
                 </p>
                 <div class="skills">
-                    <a href="messege_section/chairman.html">Chairman's Message</a>
-                    <a href="messege_section/director.html">Director's Message</a>
+                    <a onclick="chairman_mege()" href="#">Chairman's Message</a>
+                    <a onclick="director_mege()" href="#">Director's Message</a>
                     <a href="#">Academic Council</a>
                 </div>
             </div>
@@ -24,3 +24,12 @@
     </section>
 </body>
 </html>
+
+<script>
+function chairman_mege() {
+  window.open("messege_section/chairman.html");
+}
+function director_mege() {
+  window.open("messege_section/director.html");
+}
+</script>

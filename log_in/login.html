@@ -20,11 +20,22 @@
 
         <input type="submit" class="logbtn" value="Login" onclick="onLogin()">
         <div class="firgot_text">
-          <a href="../forgotten/forgotten.html">Forgotten password?</a>
+          <a onclick="forgotten_page()" href="">Forgotten password?</a>
         </div>
         <div class="bottom-text">
-          Don't have account? <a href="../registration/registration.html">Sign up</a>
+          Don't have account? <a onclick="registation_page()" href="#">Sign up</a>
         </div>
       </form>
   </section>
 </html>
+
+
+
+<script>
+function forgotten_page() {
+  window.open("../forgotten/forgotten.html");
+}
+function registation_page() {
+  window.open("../registration/registration.html");
+}
+</script>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
-   <link rel = "icon" href ="Logo.png" type = "image/x-icon">
-  <link rel="stylesheet" href="registration.css">
-  
+	<title>Registration Form</title>
+	 <link rel = "icon" href ="Logo.png" type = "image/x-icon">
+	<link rel="stylesheet" href="registration.css">
+	
 </head>
 <body>
 
@@ -18,7 +18,11 @@
        <div class="inputfield">
           <label>Full Name</label></br>
           <input type="text" class="input">
-       </div>    
+       </div>  
+        <!-- <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input">
+       </div> -->  
         <div class="inputfield">
           <label>Gender</label>
           <div class="custom_select">
@@ -91,15 +95,10 @@
         <input type="submit" value="Register" class="btn">
       </div>
       <div class="sign_up_texts">
-        Already have an account<a onclick="log_in_page()" href=""> Sign In</a>
+        Already have an account<a href="../log_in/login.html"> Sign In</a>
       </div>
     </div>
-</div>  
-  
+</div>	
+	
 </body>
 </html>
-<script>
-function log_in_page() {
-  window.open("../log_in/login.html");
-}
-</script>
