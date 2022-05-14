@@ -4,6 +4,8 @@
 		<!--Online-Animation (>)-->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<!--(<) Animation -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <!-- Slick Slider-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,17 +32,18 @@
 		</div>
 		<div class="social-icon-header"><i class="fa-brands fa-facebook-f wow shake"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i></div>
 		<nav class="menu-bar list">
-						<a class="link" href="">Home</a>
-						<a class="link" href="about_us/about.html">About Us</a>
+						<a class="link" href="">Home</a>      
+						<a class="link" onclick="about_page()" href="">About Us</a>
 						<a class="link" href="">Accreditation</a>
 						<a class="link" href="">Academics</a>
 						<a class="link" href="">Carrer Guidance</a>
 						<a class="link" href="">Events</a>
 						<a class="link" href="">Contract Us</a>
-						<a class="link_btn_one" href="log_in/login.html">Sign In</a>
-						<a class="link_btn_two" href="registration/registration.html">Registration</a>
+						<a class="link_btn_one" onclick="log_in_page()" href="#">Sign In</a>
+						<a class="link_btn_two" onclick="registration_page()" href="#">Registration</a>
 					</nav>
 	</section>
+<button onclick="topFunction()" id="scroll_btn" title="Go to top"><img src="Images/top_arrow.png"></button>
 <marquee width="100%" direction="right" style="color: red;">This is a sample scrolling text that has scrolls texts to down.
 </marquee>
 	<section>
@@ -183,6 +186,37 @@
       </div>
   </section>
 	
+  <section>
+   <div class="container_dirctor">
+       <h1>Director</h1>
+       <div class="logo-slider">
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_1.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_2.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_3.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_1.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_2.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_3.jpg" alt=""></a>
+              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
+              <p>Hon'ble Chancellor</p>
+           </div>
+       </div>
+   </div>
+  </section>
 <!-- Footer(>) -->
   <section class="footer_section">
   <footer class="footer">
@@ -212,7 +246,7 @@
       <li><h2>Contact us</h2>
         <ul class="box">
           <li><a href="#"><i class="fa-solid fa-phone footer_icon"></i>+91 9689903286</a></li>
-          <li class="adress_footer"><a href="https://g.page/GHRCE?share"><i class="fa-solid fa-location-dot footer_icon"></i>G H Raisoni College of Engineering, CRPF Gate, No.3, Hingna Road, Digdoh Hills, Nagpur, Maharashtra 440016</a></li>
+          <li class="adress_footer"><a onclick="location_page()" href="#"><i class="fa-solid fa-location-dot footer_icon"></i>G H Raisoni College of Engineering, CRPF Gate, No.3, Hingna Road, Digdoh Hills, Nagpur, Maharashtra 440016</a></li>
           <li><a href="#"><i class="fa-solid fa-envelope-open footer_icon"></i>info.ghrce@raisoni.net</a></li>
         </ul>
       </li>
@@ -234,6 +268,7 @@
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
+  arrows: false,
   autoplaySpeed: 3000,
   loop:true,
   responsive: [
@@ -260,17 +295,51 @@
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-});
-    
+});   
 </script>
- <script type="text/javascript" src="wow.min.js"></script>
-              <script>
-                 WOW().init();
-              </script>
 
+<script>
+var mybutton = document.getElementById("scroll_btn");
 
-            
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+    $('.logo-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        autoplayspeed: 2000,
+        infiniite: true
+    });
+    </script>
+
+<script>
+function about_page() {
+  window.open("about_us/about.html");
+}
+function log_in_page() {
+  window.open("log_in/login.html");
+}
+function registration_page() {
+  window.open("registration/registration.html");
+}
+function location_page() {
+  window.open("https://g.page/GHRCE?share");
+}
+</script>

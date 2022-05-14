@@ -95,10 +95,7 @@ i.fa-brands.fa-facebook-f {
     		left: 0px;
 }
 .slick-next {
-    		right: 0px;
-}
-button.slick-next.slick-arrow {
-    			display: none !important;
+    right: -20px;
 }
 .item img{
 			width: 100%;
@@ -314,7 +311,7 @@ box-sizing: border-box;
 
 .footer_section {
 font-family: poppins;
-margin: 0;
+margin-top: 5rem;
 display: grid;
 font-size: 14px;
 }
@@ -516,6 +513,103 @@ flex: 2 0px;
     margin: 20px 0;
   }
 }
+
+.container_dirctor {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+.item_img{
+  width: 100%;
+}
+.container_dirctor h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    position:relative;
+    margin-bottom: 60px;
+}
+.dior_item h4{
+  margin-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.dior_item p{
+font-family: 'Rubik', sans-serif;
+}
+.container_dirctor h1:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #FF8159;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.logo-slider .dior_item{
+    background-color: #fff;
+    box-shadow: 0 4px 5px #cacaca;
+    border-radius: 8px;
+    padding: 15px;
+    border: 2px solid #111;
+}
+.logo-slider .slick-slide{
+    margin:15px;
+    
+}
+.slick-dots li.slick-active button:before{
+    color:#ff5722;
+}
+.sliick-dots li button:before{
+    font-size: 12px;
+}
+.slick-next:before,
+.slick-prev:before{
+    color: #ff8159;
+    font-size: 24px;
+}
+.dior_item:hover{
+    display: block;
+    transition: all ease 0.3s;
+    transform: scale(1.1) translateY(-5px);
+}
+.slick-prev {
+    left: -30px;
+}
+
+
+#scroll_btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffcc00;
+  clip-path: polygon(100% 75%, 50% 60%, 1% 75%, 0 35%, 48% 0, 100% 35%);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#scroll_btn:hover {
+  background-color: #555;
+}
+html {
+  scroll-behavior: smooth;
+}
+button#scroll_btn img {
+    height: 20px;
+}
+
+
+
 /*Footer (>)*/
 
 @keyframes logoani {
