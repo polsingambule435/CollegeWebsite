@@ -122,7 +122,7 @@ i.fa-brands.fa-facebook-f {
 			justify-content: space-around;
 }
 .gallary-two{
-			margin-top: 50px;
+			margin-top: 10px;
 			display: flex;
 			justify-content: space-around;
 }
@@ -161,8 +161,8 @@ i.fa-brands.fa-facebook-f {
 			margin: 0px 0px 20px 25px;
 			font-family: calibri;
 			font-size: 30px;
-    		font-weight: bold;
-    		text-decoration: underline;
+    	font-weight: bold;
+    	text-decoration: underline;
 }
 
 .back_img_login{
@@ -183,7 +183,7 @@ i.fa-brands.fa-facebook-f {
         padding: 30px;
         border-radius: 50px;
         background: #18F4E3;
-		//-webkit-animation: flip-scale-down-ver 0.5s linear both;
+		    //-webkit-animation: flip-scale-down-ver 0.5s linear both;
         //animation: flip-scale-down-ver 0.5s linear both;
    }
 
@@ -526,7 +526,7 @@ font-family: 'Rubik', sans-serif;
 }
 .logo-slider .slick-slide{
     margin:15px;
-    
+    margin-top: 25px;
 }
 .slick-dots li.slick-active button:before{
     color:#ff5722;
