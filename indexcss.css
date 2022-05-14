@@ -27,11 +27,18 @@ img.college-logo-img {
 					}
 .header-contant{
 				display: flex;
+        background-image: url('Images/header_back.gif');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px;
 			}
 .header-contant h1 {
-    				font-family: 'Josefin Sans', sans-serif;
+            color: #fff;
+    				font-family: 'Jost', sans-serif;
     				font-size: 45px;
-    				margin: 40px 50px;
+    				margin: 40px 25px;
 }
 .menu-bar{
 			background-color: #ffcc00;  
@@ -43,7 +50,6 @@ img.college-logo-img {
 				text-decoration: none;
 				color: #000;
 				font-family: 'Rubik', sans-serif;
-				//animation: focus-in-contract 1s ease 0s 1 normal none;
 			}
 
 			.menu-bar a:hover{
@@ -71,15 +77,12 @@ a.link_btn_two:hover {
 						margin: 13px 5px;
 						border-radius: 50px;
 						padding: 8px 8px;
-								  
+						color: #fff;	  
 }
 .social-icon-header i:hover{
 			 background-color: #6DDACF;
-			 color: #fff;
-			
+			 color: #000;
 			}
-
-
 
 i.fa-brands.fa-facebook-f {
     						padding: 8px 12px;
@@ -149,13 +152,10 @@ i.fa-brands.fa-facebook-f {
 }
 
 .gallary-one img:hover{
-					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .gallary-two img:hover{
-					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .gallary-three img:hover{
-					//animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .img_name_text{
 			margin: 0px 0px 20px 25px;
@@ -272,38 +272,6 @@ i.fa-brands.fa-facebook-f {
   padding: 5px 5px;
   color: #08645D;
 }
-
-
-@-webkit-keyframes flip-scale-down-ver {
-  0% {
-    -webkit-transform: scale(1) rotateY(0);
-            transform: scale(1) rotateY(0);
-  }
-  50% {
-    -webkit-transform: scale(0.4) rotateY(-90deg);
-            transform: scale(0.4) rotateY(-90deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateY(-180deg);
-            transform: scale(1) rotateY(-180deg);
-  }
-}
-@keyframes flip-scale-down-ver {
-  0% {
-    -webkit-transform: scale(1) rotateY(0);
-            transform: scale(1) rotateY(0);
-  }
-  50% {
-    -webkit-transform: scale(0.4) rotateY(-90deg);
-            transform: scale(0.4) rotateY(-90deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateY(-180deg);
-            transform: scale(1) rotateY(-180deg);
-  }
-}
-
-
 /*Footer (>)*/
 *, *:before, *:after {
 box-sizing: border-box;
@@ -612,6 +580,7 @@ button#scroll_btn img {
 
 /*Footer (>)*/
 
+/*Logo keyframes >*/
 @keyframes logoani {
 	0% {
 		transform: scale(0);
@@ -621,21 +590,21 @@ button#scroll_btn img {
 		transform: scale(1);
 	}
 }
-@keyframes myAnim {
-	0% {
-		transform: scale(0.5);
-	}
+/*Logo keyframes <*/
 
-	100% {
-		transform: scale(1);
-	}
-}
-
-@keyframes scale-up-center {
-  0%{
-    transform: scale(.2);
+/*Statistics keyframes >*/
+@keyframes flip-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
   }
-  100%{
-    transform: scale(1);
+  50% {
+    -webkit-transform: scale(0.4) rotateY(-90deg);
+            transform: scale(0.4) rotateY(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(-180deg);
+            transform: scale(1) rotateY(-180deg);
   }
 }
+/*Statistics keyframes <*/
