@@ -226,10 +226,10 @@
     <ul class="r-footer">
       <li><h2>Social</h2>
         <ul class="box">
-            <li><a href="https://www.facebook.com/raisoniworld/">Facebook</a></li>
-            <li><a href="https://twitter.com/raisoniworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
-            <li><a href="https://in.pinterest.com/raisoniuniversity/">Pinterest</a></li>
-            <li><a href="https://www.instagram.com/raisoniworld/?hl=en">Instagram</a></li>
+            <li><a onclick="facebook_page()" href="">Facebook</a></li>
+            <li><a onclick="twitter_page()" href="">Twitter</a></li>
+            <li><a onclick="pinteres_page()" href="">Pinterest</a></li>
+            <li><a onclick="instagram_page()" href="">Instagram</a></li>
         </ul>
       </li>
       <li class="features"><h2>Important Link</h2>
@@ -311,7 +311,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -341,5 +340,20 @@ function registration_page() {
 }
 function location_page() {
   window.open("https://g.page/GHRCE?share");
+}
+
+
+
+function facebook_page() {
+  window.open("https://www.facebook.com/raisoniworld/");
+}
+function twitter_page() {
+  window.open("https://twitter.com/raisoniworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor");
+}
+function pinteres_page() {
+  window.open("https://in.pinterest.com/raisoniuniversity/");
+}
+function instagram_page() {
+  window.open("https://www.instagram.com/raisoniworld/?hl=en");
 }
 </script>
