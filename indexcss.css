@@ -18,7 +18,7 @@ img.college-logo-img {
     					margin-top: 5px;
     					margin-bottom: 5px;
               border-radius: 50%;
-              background-image: url('file:///C:/Users/Nitin/Desktop/tumblr_nncz2fVSOE1u3bn17o1_540.gif');
+              background-image: url('Images/animation_type.gif');
 					    background-position: 0px;
               background-repeat: no-repeat;
               background-size: cover;
@@ -79,7 +79,7 @@ a.link_btn_two:hover {
  	background-image:linear-gradient(orange,red);
 }
 .social-icon-header i {
-            background-image: url('file:///C:/Users/Nitin/Desktop/tumblr_nncz2fVSOE1u3bn17o1_540.gif');
+            background-image: url('Images/animation_type.gif');
             background-position: 0px;
             background-repeat: no-repeat;
             background-size: cover;
