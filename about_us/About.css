@@ -14,8 +14,8 @@ body{
 }
 
 .about-section{
-    background: url(pic.jpg) no-repeat left;
-    background-size: 55%;
+    background: url(graduation_img.jpg) no-repeat left;
+    background-size: cover;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
@@ -24,8 +24,12 @@ body{
 .inner-container{
     width: 55%;
     float: right;
-    background-color: #fdfdfd;
+    background-color: #88A2D4;
+    border: 2px solid #fff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius:50px;
     padding: 117px;
+    margin-right: 20px;
 }
 
 .inner-container h1{
@@ -36,7 +40,7 @@ body{
 
 .text{
     font-size: 13px;
-    color: #545454;
+    color: #000;
     line-height: 20px;
     text-align: justify;
     margin-bottom: 40px;

@@ -17,7 +17,12 @@ img.college-logo-img {
     					margin-left: 47px;
     					margin-top: 5px;
     					margin-bottom: 5px;
-					}
+              border-radius: 50%;
+              background-image: url('file:///C:/Users/Nitin/Desktop/tumblr_nncz2fVSOE1u3bn17o1_540.gif');
+					    background-position: 0px;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
 .socialinformation a i {
 						margin: 0 10px;
 						}
@@ -74,18 +79,26 @@ a.link_btn_two:hover {
  	background-image:linear-gradient(orange,red);
 }
 .social-icon-header i {
+            background-image: url('file:///C:/Users/Nitin/Desktop/tumblr_nncz2fVSOE1u3bn17o1_540.gif');
+            background-position: 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
 						margin: 13px 5px;
 						border-radius: 50px;
 						padding: 8px 8px;
-						color: #fff;	  
+						color: #000;	  
 }
 .social-icon-header i:hover{
+       cursor: pointer;
+       background-image:none;
 			 background-color: #6DDACF;
 			 color: #000;
 			}
 
 i.fa-brands.fa-facebook-f {
     						padding: 8px 12px;
+
+
 }
 .social-icon-header {
 					    position: absolute;

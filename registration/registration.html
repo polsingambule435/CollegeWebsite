@@ -14,12 +14,20 @@
     <div class="title">
       Online Admission Form
     </div>
-    <div class="form">
+    <form action="registration_form" id="registration_form" class="form">
        <div class="inputfield">
           <label>Full Name</label></br>
-          <input type="text" class="input">
-       </div>    
-        <div class="inputfield">
+          <input id="full_name" name="full_name" type="text" class="input">
+       </div> 
+       <div class="inputfield">
+          <label>Email Address</label>
+          <input name="email_add" id="email_add" type="text" class="input">
+       </div>
+       <div class="inputfield">
+          <label>Phone Number</label>
+          <input name="phone_number" id="phone_number" type="text" class="input">
+       </div> 
+       <div class="inputfield">
           <label>Gender</label>
           <div class="custom_select">
             <select>
@@ -29,7 +37,15 @@
             </select>
           </div>
        </div>
-      <div class="inputfield">
+       <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea"></textarea>
+       </div>
+       <div class="inputfield">
+          <label>Postal Code</label>
+          <input name="postal_code" id="postal_code" type="text" class="input">
+       </div>
+       <div class="inputfield">
           <label>Qualification</label>
           <div class="custom_select">
             <select>
@@ -50,56 +66,44 @@
               <option value="D-Pharma">D Pharma</option>
             </select>
           </div>
-       </div>
-
-        <div class="inputfield">
-          <label>Email Address</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield">
-          <label>Phone Number</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield">
-          <label>Address</label>
-          <textarea class="textarea"></textarea>
-       </div> 
-      <div class="inputfield">
-          <label>Postal Code</label>
-          <input type="text" class="input">
        </div> 
        <div class="inputfield">
           <label>User Name</label>
-          <input type="text" class="input">
+          <input name="user_name" id="user_name" type="text" class="input">
        </div> 
        <div class="inputfield">
           <label>Password</label>
-          <input type="password" class="input">
+          <input name="password" id="password" type="password" class="input">
        </div>  
       <div class="inputfield">
           <label>Confirm Password</label>
-          <input type="password" class="input">
+          <input name="confirm_password" id="confirm_password" type="password" class="input">
        </div> 
       <div class="inputfield terms">
           <label class="check">
-            <input type="checkbox">
+            <input name="agree_condition" id="agree_condition" type="checkbox">
             <span class="checkmark"></span>
           </label>
-          <p>Agreed to <a href="#">terms and conditions</a></p>
+          <p>Agreed to <a href="terms _and_conditions/index.html">terms and conditions</a></p>
        </div> 
       <div class="inputfield">
-        <input type="submit" value="Register" class="btn">
+        <input id="submit_btn" name="submit_btn" type="submit" value="Register" class="btn">
       </div>
+
       <div class="sign_up_texts">
         Already have an account<a onclick="log_in_page()" href=""> Sign In</a>
       </div>
-    </div>
-</div>  
+    </form>
+    
+ 
   
 </body>
 </html>
 <script>
 function log_in_page() {
   window.open("../log_in/login.html");
+}
+function terms_page() {
+  window.open("terms _and_conditions/index.html");
 }
 </script>
