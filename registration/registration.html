@@ -86,14 +86,30 @@
           </label>
           <p>Agreed to <a href="terms _and_conditions/index.html">terms and conditions</a></p>
        </div> 
+      <div class="captcha_wrpr">
+        <div class="captcha_wrpr_spinner">
+          <label>
+            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+            <span class="captcha_wrpr_checkmark"><span>&nbsp;</span></span>
+          </label>
+        </div>
+        <div class="cptca_wrpr_heading">
+          I'm not a robot
+        </div>
+        <div class="cptca_wrpr_logo">
+          <img src="icon.png">
+          <p>reCAPTCHA</p>
+          <small>Privacy - Terms</small>
+        </div>
+      </div>
       <div class="inputfield">
         <input id="submit_btn" name="submit_btn" type="submit" value="Register" class="btn">
       </div>
-
       <div class="sign_up_texts">
         Already have an account<a onclick="log_in_page()" href=""> Sign In</a>
       </div>
     </form>
+
     
  
   

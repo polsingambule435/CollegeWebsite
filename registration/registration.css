@@ -178,3 +178,176 @@ background-size: cover;
     flex-direction: row;
   }
 }
+/*Capcha Css >*/
+.captcha_wrpr {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color:#f9f9f9;
+  border:2px solid #d3d3d3;
+  border-radius:5px;
+  color:#4c4a4b;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:5px 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .captcha_wrpr {
+    flex-direction:column;
+  }
+  .cptca_wrpr_heading {
+    margin:.5em!important;
+    cptca_wrpr_heading-align:center;
+  }
+  .cptca_wrpr_logo {
+    align-self: center!important;
+  }
+  .captcha_wrpr_spinner {
+    margin:2em .5em .5em .5em!important;
+  }
+}
+
+.cptca_wrpr_heading {
+  font-size:18px;
+  font-weight:500;
+  margin-right:1em;
+}
+.captcha_wrpr_spinner {
+  position:relative;
+  width:2em;
+  height:2em;
+  display:flex;
+  margin:0.5em 0.5em;
+  align-items:center;
+  justify-content:center;
+}
+input[type="checkbox"] { position: absolute; opacity: 0; z-index: -1; }
+input[type="checkbox"]+.captcha_wrpr_checkmark {
+  display:inline-block;
+  width:1.5em;
+  height:1.5em;
+  background-color:#fcfcfc;
+  border:2.5px solid #c3c3c3;
+  border-radius:3px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+}
+input[type="checkbox"]+.captcha_wrpr_checkmark span {
+  content:'';
+  position:relative;
+  margin-top:-3px;
+  transform:rotate(45deg);
+  width:.75em;
+  height:1.2em;
+  opacity:0;
+}
+input[type="checkbox"]+.captcha_wrpr_checkmark>span:after {
+  content:'';
+  position:absolute;
+  display:block;
+  height:3px;
+  bottom:0;left:0;
+  background-color:#029f56;
+}
+input[type="checkbox"]+.captcha_wrpr_checkmark>span:before {
+  content:'';
+  position:absolute;
+  display:block;
+  width:3px;
+  bottom:0;right:0;
+  background-color:#029f56;
+}
+input[type="checkbox"]:checked+.captcha_wrpr_checkmark { 
+  animation:2s spin forwards;
+}
+input[type="checkbox"]:checked+.captcha_wrpr_checkmark>span { 
+  animation:1s fadein 1.9s forwards;
+}
+input[type="checkbox"]:checked+.captcha_wrpr_checkmark>span:after {animation:.3s bottomslide 2s forwards;}
+input[type="checkbox"]:checked+.captcha_wrpr_checkmark>span:before {animation:.5s rightslide 2.2s forwards;}
+@keyframes fadein {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes bottomslide {
+  0% {width:0;}
+  100% {width:100%;}
+}
+@keyframes rightslide {
+  0% {height:0;}
+  100% {height:100%;}
+}
+.cptca_wrpr_logo {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:100%;
+  align-self:flex-end;
+}
+.cptca_wrpr_logo img {
+  height:1.5em;
+  width:1.5em;
+}
+.cptca_wrpr_logo p {
+  color:#9d9ba7;
+  margin:0;
+  font-size:11px;
+  font-weight:700;
+  margin:.4em 0 .2em 0;
+}
+.cptca_wrpr_logo small {
+  color:#9d9ba7;
+  margin:0;
+  font-size:10px;
+}
+@keyframes spin {
+  10% {
+    width:0;
+    height:0;
+    border-width:6px;
+  }
+  30% {
+    width:0;
+    height:0;
+    border-radius:50%;
+    border-width:1em;
+    transform: rotate(0deg);
+    border-color:rgb(199,218,245);
+  }
+  50% {
+    width:2em;
+    height:2em;
+    border-radius:50%;
+    border-width:4px;
+    border-color:rgb(199,218,245);
+    border-right-color:rgb(89,152,239);
+  }
+  70% {
+    border-width:4px;
+    border-color:rgb(199,218,245);
+    border-right-color:rgb(89,152,239);
+  }
+  90% {
+    border-width:4px;
+  }
+  100% {
+    width:2em;
+    height:2em;
+    border-radius:50%;
+    transform: rotate(720deg);
+    border-color:transparent;
+  }
+}
+::selection {
+  background-color:transparent;
+  color:teal;
+}
+::-moz-selection {
+  background-color:transparent;
+  color:teal;
+}
+/*Capcha Css <*/
