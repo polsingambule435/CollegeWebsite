@@ -67,28 +67,65 @@
 		</div>
 	</section>	
 	<section>
-		<h1 class="img_name_text">IMAGE GALLARY</h1>
-		<div class="img-gallary">
-			<div class="gallary-one">
-				<img src="Images/Class_img_1.jpg">
-				<img src="Images/Class_img_2.jpg">
-				<img src="Images/Class_img_3.jpg">
-				<img src="Images/Class_img_4.jpg">
-			</div>
-			<div class="gallary-two">
-				<img src="Images/Practical_img_1.jpg">
-				<img src="Images/Practical_img_2.jpg">
-				<img src="Images/Practical_img_3.jpg">
-				<img src="Images/Practical_img_4.jpg">
-			</div>
-			<div class="gallary-three">
-				<img src="Images/Annual_function_img1.jpg" class="card-image">
-				<img src="Images/Annual_function_img2.jpg">
-				<img src="Images/Annual_function_img3.jpg">
-				<img src="Images/Annual_function_img4.jpg">
-			</div>
-		</div>
-	</section>
+    <div class="gallery-section">
+      <div class="inner-width">
+        <h1>IMAGE GALLARY</h1>
+        <div class="border"></div>
+        <div class="gallery">
+
+          <a href="#" class="image">
+            <img src="Images/Annual_function_img1.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Annual_function_img2.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Annual_function_img3.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Annual_function_img4.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Practical_img_1.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Practical_img_2.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Practical_img_3.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Practical_img_4.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Class_img_1.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Class_img_2.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Class_img_3.jpg" alt="">
+          </a>
+
+          <a href="#" class="image">
+            <img src="Images/Class_img_4.jpg" alt="">
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+</section>
 <section>
     <div class="review_heading">
       <h1>Statistics</h1>
@@ -121,6 +158,35 @@
       </div>
     </div>
   </section>
+
+
+<section class="side_menu">
+  <div class="side-menu">
+    <div class="toggle-btn fas fa-chevron-left"></div>
+    <a href="#">
+      <i class="fa-brands fa-facebook-f"></i>
+      Facebook
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-twitter"></i>
+      Twitter
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-youtube"></i>
+      Youtube
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-linkedin-in"></i>
+      Linkdin
+    </a>
+  </div>
+</section>
+
+
   <section class="top_student_section">
     <h1 class="Topper_Heading">2021-2022 Toppers</h1>  
     <div class="container">
@@ -302,6 +368,12 @@
   ]
 });   
 </script>
+  <script>
+    $(".toggle-btn").click(function(){
+      $(".side-menu").toggleClass("active");
+      $(this).toggleClass("fa-chevron-right");
+    });
+  </script>
 
 <script>
 var mybutton = document.getElementById("scroll_btn");
