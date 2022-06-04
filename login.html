@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <link rel = "icon" href ="images/logo.png" type = "Images/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Jost&family=Montserrat:wght@300;700&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/login.js"></script>
+
+  </head>
+  <section>
+      <form action="index.html" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+          <input name="user_name" type="text" placeholder="Username" id="username">
+        </div>
+        <div class="txtb">
+          <input name="password" type="password" placeholder="Password" id="password">
+        </div>
+
+        <input type="submit" class="logbtn" value="Login" onclick="onLogin()">
+        <div class="firgot_text">
+          <a onclick="forgotten_page()" href="">Forgotten password?</a>
+        </div>
+        <div class="bottom-text">
+          Don't have account? <a onclick="registation_page()" href="#">Sign up</a>
+        </div>
+      </form>
+  </section>
+</html>
+
+
+
+<script>
+function forgotten_page() {
+  window.open("forgotten.html");
+}
+function registation_page() {
+  window.open("registration.html");
+}
+</script>

@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../images/term_contion_back_img.jpg);
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: 'Jost', sans-serif;
+}
+
+.terms-box{
+  border: 1px solid #fff;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-left: 30px;
+  max-width: 700px;
+  color: #fff;
+  padding: 40px 30px;
+  border:1px solid #fff;
+}
+
+.terms-text{
+  border: 1px solid #fff;
+  padding: 0 20px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+.terms-text::-webkit-scrollbar{
+  width: 4px;
+  background-color: #282828;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+  background-color:#ffcc00;
+}
+
+.terms-text h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.terms-box h4{
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 40px;
+}
+.terms-box p{
+  font-size: 20px;
+}
+.terms-text:hover{
+  background-color: #000;
+  transition: 2s;
+}
+
+.terms-box h4 span{
+  color: #ffcc00;
+}
+.buttons {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 0 20px;
+}
+.buttons .btn button {
+    background: linear-gradient(120deg,#ff3900,#ffcc00);
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 3px;
+    font-size:16px;
+}
+.buttons .btn button:hover{
+    background: linear-gradient(120deg,#ffcc00,#ff3900);
+    cursor: pointer;
+  }

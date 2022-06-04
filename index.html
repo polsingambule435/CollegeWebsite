@@ -1,56 +1,101 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-
-		<!--Online-Animation (>)-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-		<!--(<) Online-Animation -->
     <!--(>) Font Family -->
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Jost&family=Montserrat:wght@300;700&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--  -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
     <!--(>) Font Family -->
     <!-- Slick Slider(>)-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">    
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick Slider(<)-->
     <!-- Font Awersome (Link >)-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awersome (Link <)-->
     <!-- External Css (Link >)-->
-		<link rel="stylesheet" type="text/css" href="indexcss.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!-- External Css (Link <)-->
 		<title>Home Page</title>
-		<link rel = "icon" href ="Images/Logo.png" type = "Images/x-icon">
-    <link rel="stylesheet" type="text/css" src="animate.css">
+		<link rel = "icon" href ="images/logo.png" type = "Images/x-icon">
 	</head>
 	<body>
 	<section class="header">
 		<div class="socialinformation">
-			<a href="#" class="animate__animated animate__lightSpeedInLeft"><i class="fa-solid fa-mobile-retro"></i>+91 9579010643</a>
-			<a href="#" class="animate__animated animate__lightSpeedInRight"><i class="fa-solid fa-envelope"></i>rtmnu@gmail.com</a>
+			<a href="#" class="wow fadeInLeft"><i class="fa-solid fa-mobile-retro"></i>+91 9579010643</a>
+			<a href="#" class="wow fadeInRight"><i class="fa-solid fa-envelope"></i>rtmnu@gmail.com</a>
 		</div>
 		<div class="header-contant">
-			<img class="college-logo-img" src="Images/Logo.png">
-			<h1 class="animate__animated animate__fadeInDown">Rashtrasant Tukadoji Maharaj Nagpur University</h1>
+			<img class="college-logo-img" src="images/logo.png">
+			<h1 class="wow fadeInDown">Rashtrasant Tukadoji Maharaj Nagpur University</h1>
 		</div>
-		<div class="social-icon-header"><i class="fa-brands fa-facebook-f wow shake"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i></div>
-		<nav class="menu-bar list">
-						<a class="link" href="">Home</a>      
-						<a class="link" onclick="about_page()" href="">About Us</a>
-						<a class="link" href="">Accreditation</a>
-						<a class="link" href="">Academics</a>
-						<a class="link" href="">Carrer Guidance</a>
-						<a class="link" href="">Events</a>
-						<a class="link" href="">Contract Us</a>
-						<a class="link_btn_one" onclick="log_in_page()" href="#">Sign In</a>
-						<a class="link_btn_two" onclick="registration_page()" href="#">Registration</a>
-					</nav>
+		<div class="social-icon-header wow fadeInRight"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i></div>
+		  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+<!--       <div class="logo"><a href="#">CodingLab</a></div> -->
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <!-- <span class="logo-name">CodingLab</span> -->
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" onclick="about_page()">About Us</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Dropdown-1</a></li>
+              <li><a href="#">Dropdown-2</a></li>
+              <li><a href="#">Dropdown-3</a></li>  
+              <li class="more">
+                <span><a href="#">Dropdown-4<i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Dropdown-1</a></li>
+                  <li><a href="#">Dropdown-2</a></li>
+                  <li><a href="#">Dropdown-3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Accreditation</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dropdown-1</a></li>
+              <li><a href="#">Dropdown-2</a></li>
+              <li><a href="#">Dropdown-3</a></li>
+              <li><a href="#">Dropdown-4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Carrer Guidance</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contract Us</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+      <div class="menu_buttons">
+        <a href="#"><button onclick="log_in_page()">Sign In</button></a> 
+        <a href="#"><button onclick="registration_page()">Registration</button></a>
+      </div>
+      </div> 
+    </nav>
 	</section>
-<button onclick="topFunction()" id="scroll_btn" title="Go to top"><img src="Images/top_arrow.png"></button>
-<marquee width="100%" direction="right" style="color: red;">This is a sample scrolling text that has scrolls texts to down.
+<button onclick="topFunction()" id="scroll_btn" title="Go to top"><img src="images/top_arrow.png"></button>
+<marquee class="marquee" width="100%" direction="right" style="color: red;">This is a sample scrolling text that has scrolls texts to down.
 </marquee>
-	<section>
+	<section class="wow fadeInDown">
 		<div class="bslider">
 			<div class="item">
 				<img src="Images/Slider_img_1.jpg">
@@ -69,68 +114,66 @@
 	<section>
     <div class="gallery-section">
       <div class="inner-width">
-        <h1>IMAGE GALLARY</h1>
-        <div class="border"></div>
+        <h1 class="wow fadeInLeft">IMAGE GALLARY</h1>
+        <div class="border wow fadeInLeft"></div>
         <div class="gallery">
 
-          <a href="#" class="image">
-            <img src="Images/Annual_function_img1.jpg" alt="">
+          <a href="#" class="image wow fadeInDown">
+            <img src="images/img_gally_img_1.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Annual_function_img2.jpg" alt="">
+          <a href="#" class="image wow fadeInDown">
+            <img src="images/img_gally_img_2.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Annual_function_img3.jpg" alt="">
+          <a href="#" class="image wow fadeInDown">
+            <img src="images/img_gally_img_3.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Annual_function_img4.jpg" alt="">
+          <a href="#" class="image wow fadeInDown">
+            <img src="images/img_gally_img_4.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Practical_img_1.jpg" alt="">
+          <a href="#" class="image wow fadeInRight">
+            <img src="images/img_gally_img_5.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Practical_img_2.jpg" alt="">
+          <a href="#" class="image wow fadeInRight">
+            <img src="images/img_gally_img_6.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Practical_img_3.jpg" alt="">
+          <a href="#" class="image wow fadeInRight">
+            <img src="images/img_gally_img_7.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Practical_img_4.jpg" alt="">
+          <a href="#" class="image wow fadeInRight">
+            <img src="images/img_gally_img_8.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Class_img_1.jpg" alt="">
+          <a href="#" class="image wow fadeInUp">
+            <img src="images/img_gally_img_9.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Class_img_2.jpg" alt="">
+          <a href="#" class="image wow fadeInUp">
+            <img src="images/img_gally_img_10.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Class_img_3.jpg" alt="">
+          <a href="#" class="image wow fadeInUp">
+            <img src="images/img_gally_img_11.jpg" alt="">
           </a>
 
-          <a href="#" class="image">
-            <img src="Images/Class_img_4.jpg" alt="">
+          <a href="#" class="image wow fadeInUp">
+            <img src="images/img_gally_img_12.jpg" alt="">
           </a>
-
-
         </div>
       </div>
     </div>
 </section>
 <section>
     <div class="review_heading">
-      <h1>Statistics</h1>
+      <h1 class="wow fadeInDown">Statistics</h1>
     </div>
-    <div class="icon_div wow animated">
+    <div class="icon_div wow fadeInDown">
       <div class="col_1">
         <i class="fa-solid fa-building-columns icon_review_section"></i></br>
         <h2>130</h2>
@@ -188,9 +231,9 @@
 
 
   <section class="top_student_section">
-    <h1 class="Topper_Heading">2021-2022 Toppers</h1>  
+    <h1 class="Topper_Heading wow fadeInDown">2021-2022 Toppers</h1>  
     <div class="container">
-         <div class="card">
+         <div class="card wow fadeInRight">
             <div class="img">
                <img src="Images/Top_Student_1.jpg">
             </div>
@@ -211,7 +254,7 @@
                </div>
             </div>
          </div>
-         <div class="card">
+         <div class="card wow fadeInDown">
             <div class="img">
                <img src="Images/Top_Student_2.png">
             </div>
@@ -232,7 +275,7 @@
                </div>
             </div>
          </div>
-         <div class="card">
+         <div class="card wow fadeInLeft">
             <div class="img">
                <img src="Images/Top_Student_3.png">
             </div>
@@ -255,46 +298,14 @@
          </div>
       </div>
   </section>
-	
-  <section>
-   <div class="container_dirctor">
-       <h1>Director</h1>
-       <div class="logo-slider">
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_1.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_2.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_3.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_1.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_2.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-           <div class="dior_item"><a href="#"><img class="item_img" src="Images/img_3.jpg" alt=""></a>
-              <h4>SHRI. BHAGAT SINGH KOSHYARI</h4>
-              <p>Hon'ble Chancellor</p>
-           </div>
-       </div>
-   </div>
-  </section>
 <!-- Footer(>) -->
   <section class="footer_section">
   <footer class="footer">
     <div class="l-footer">
-      <h1><img class="footer_logo" src="Images/Footer_Logo_img.png"></h1>
+      <h1><img class="footer_logo wow fadeInLeft" src="Images/Footer_Logo_img.png"></h1>
     </div>
     <ul class="r-footer">
-      <li><h2>Social</h2>
+      <li class="wow fadeInDown"><h2>Social</h2>
         <ul class="box">
             <li><a onclick="facebook_page()" href="">Facebook</a></li>
             <li><a onclick="twitter_page()" href="">Twitter</a></li>
@@ -302,7 +313,7 @@
             <li><a onclick="instagram_page()" href="">Instagram</a></li>
         </ul>
       </li>
-      <li class="features"><h2>Important Link</h2>
+      <li class="features wow fadeInDown"><h2>Important Link</h2>
         <ul class="box h-box">
             <li><a href="#">Mandatory Disclosure</a></li>
             <li><a href="#">Examination</a></li>
@@ -313,10 +324,10 @@
             <li><a href="#">Study in India</a></li>
         </ul>
       </li>
-      <li><h2>Contact us</h2>
+      <li class="wow fadeInDown"><h2>Contact us</h2>
         <ul class="box">
           <li><a href="#"><i class="fa-solid fa-phone footer_icon"></i>+91 9689903286</a></li>
-          <li class="adress_footer"><a onclick="location_page()" href="#"><i class="fa-solid fa-location-dot footer_icon"></i>G H Raisoni College of Engineering, CRPF Gate, No.3, Hingna Road, Digdoh Hills, Nagpur, Maharashtra 440016</a></li>
+          <li class="adress_footer add_line"><a onclick="location_page()" href="#"><i class="fa-solid fa-location-dot footer_icon"></i>G H Raisoni College of Engineering, CRPF Gate, No.3, Hingna Road, Digdoh Hills, Nagpur, Maharashtra 440016</a></li>
           <li><a href="#"><i class="fa-solid fa-envelope-open footer_icon"></i>info.ghrce@raisoni.net</a></li>
         </ul>
       </li>
@@ -324,14 +335,17 @@
   </footer>
 </section>
 <!-- Footer(<) -->
-	</body>
-	</html>
+<!-- Slick Slider Script >-->
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Slick Slider Script <-->
+<!--  -->
 
-
-
-
+<!--  -->
+<!-- Slick Slider Code Script >-->
 <script>
-	$('.bslider').slick({
+  $('.bslider').slick({
   dots: true,
   infinite: false,
   speed: 300,
@@ -345,8 +359,8 @@
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -354,8 +368,8 @@
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
@@ -368,58 +382,28 @@
   ]
 });   
 </script>
-  <script>
+
+<script>
     $(".toggle-btn").click(function(){
       $(".side-menu").toggleClass("active");
       $(this).toggleClass("fa-chevron-right");
     });
-  </script>
-
-<script>
-var mybutton = document.getElementById("scroll_btn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 </script>
-
-<script>
-    $('.logo-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        autoplayspeed: 2000,
-        infiniite: true
-    });
-    </script>
+<!-- Slick Slider Code Script >-->
 
 <script>
 function about_page() {
-  window.open("about_us/about.html");
+  window.open("about.html");
 }
 function log_in_page() {
-  window.open("log_in/login.html");
+  window.open("login.html");
 }
 function registration_page() {
-  window.open("registration/registration.html");
+  window.open("registration.html");
 }
 function location_page() {
   window.open("https://g.page/GHRCE?share");
 }
-
-
-
 function facebook_page() {
   window.open("https://www.facebook.com/raisoniworld/");
 }
@@ -433,7 +417,52 @@ function instagram_page() {
   window.open("https://www.instagram.com/raisoniworld/?hl=en");
 }
 </script>
+
  <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+ <script>
+    new WOW().init();
+</script>
+
+<script>
+  // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() { 
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+</script>
+</body>
+</html>
