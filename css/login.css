@@ -8,8 +8,10 @@
 }
 
 section{
+  position: fixed;
   min-height: 100vh;
   background-image:url("../images/other_back.jpg");
+  height:60rem;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -23,7 +25,7 @@ section{
   border-radius: 10px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top:35%;
   transform: translate(-50%,-50%);
 }
 
@@ -95,7 +97,6 @@ section{
 }
 
 .bottom-text{
-  font-family:calibri;
   margin-top: 60px;
   text-align: center;
   font-size: 13px;
@@ -104,9 +105,79 @@ section{
   margin-top: 5px;
   text-align: right;
 }
-.firgot_text a{
-    font-family:calibri;
-}
 .firgot_text a:hover{
     text-decoration: underline;
 }
+
+/*Responsive Media Queries( Start-> )*/
+
+@media screen and (min-width:1600px){
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+section {
+    position: fixed;
+    min-height: 125vh;
+    background-image: url(../images/other_back.jpg);
+    height: 100%;
+  }
+  .login-form {
+    top: 40%;
+  }
+  .login-form {
+    width: 330px;
+    background: #f1f1f1;
+    padding: 30px 30px;
+  }
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.bottom-text {
+    margin-top: 25px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:991px){
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.bottom-text {
+    margin-top: 25px;
+    }
+    .login-form {
+    top: 30%
+  }
+}
+@media screen and (max-width:749px){
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.bottom-text {
+    margin-top: 25px;
+    }
+       .login-form {
+    width: 300px;
+    top: 30%;
+  }
+  .logbtn {
+    width: 100%;
+    height: 35px;
+  }
+}
+@media screen and (max-width:320px){
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.bottom-text {
+    margin-top: 25px;
+    }
+    .login-form {
+    width: 300px;
+    top: 30%;
+  }
+}
+
+/*Responsive Media Queries( Start-> )*/

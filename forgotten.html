@@ -3,6 +3,7 @@
 <head>
 	<title>Forgotten Page</title>
 	<link rel = "icon" href ="images/logo.png" type = "Images/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Joan&family=Jost&family=Montserrat:wght@300;700&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -14,9 +15,10 @@
 }
 body {
     background-image: url("images/other_back.jpg");
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -143px;
+    background-position:0px 0px;
 }
 .form-container {
     display: flex;
@@ -77,7 +79,7 @@ background: linear-gradient(120deg,#ffcc00,#ff3900);
 <body>
 
 <div class="form-container">
-    <form action="#" method="post" class="form-wrap">
+    <form action="#" method="post" class="form-wrap wow fadeInDown">
         <h2>Forgot Password</h2>
         <div class="form-box">
             <input id="text_wrpr" name="text" type="text" placeholder="Enter Email" />
@@ -88,5 +90,9 @@ background: linear-gradient(120deg,#ffcc00,#ff3900);
     </form>
 </div>
 
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>	

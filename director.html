@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel = "icon" href ="images/logo.png" type = "Images/x-icon">
     <link rel="stylesheet" type="text/css" href="css/director.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Joan&family=Jost&family=Montserrat:wght@300;700&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head> 
 <body>
     <div class="section">
         <div class="container">
-            <div class="content-section">
+            <div class="content-section wow fadeInLeft">
                 <div class="title">
                     <h1>Director's Message</h1>
                 </div>
@@ -30,13 +31,16 @@
                     <a onclick="sachin_insta()" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="image-section">
+            <div class="image-section wow fadeInRight">
                 <img src="images/Dr_SachinUntawale_img.jpg">
             </div>
         </div>
     </div>
 
-    
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
 <script>

@@ -6,8 +6,9 @@
    font-family: 'Jost', sans-serif ! important;
 }
 .section{
+    position: fixed;
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
     background-color: #ddd;
 }
 .container{
@@ -69,42 +70,74 @@
 .content-section .social i:hover{
     color:#3d3d3d;
 }
-@media screen and (max-width: 768px){
-    .container{
+
+/*Responsive Media Queries( Start-> )*/
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .content-section .title {
+    font-size: 14px;
+}
+.content-section .content h3 {
+    margin-top: 11px;
+    font-size: 15px;
+}
+.section {
+    position: unset;
+    min-height: 200vh;
+}
+}
+@media screen and (min-width:750px) and (max-width:991px){
+.container {
+    text-align: center;
     width: 80%;
-    display: block;
-    margin:auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: auto;
     padding-top:50px;
 }
 .content-section{
-    float:none;
+    float: unset;
     width:100%;
-    display: block;
-    margin:auto;
 }
-.image-section{
-    float:none;
-    width:100%;
-    
+.image-section {
+    text-align: center;
+    float: right;
+    width: 100%;
 }
 .image-section img{
+    width: 40%;
+}
+.section {
+    position: unset;
+}
+}
+@media screen and (max-width:749px){
+.content-section {
+    text-align: center;
+    float: unset;
     width: 100%;
+}
+.container {
+    padding-top: 60px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    }
+.image-section{
+    text-align: center;
+    width:100%;
     height: auto;
-    display: block;
-    margin:auto;
 }
-.content-section .title{
-    text-align: center;
-    font-size: 19px;
+    .image-section img {
+    width: 40%;
+    height: auto;
 }
-.content-section .content .button{
-    text-align: center;
+.section {
+    position: unset;
 }
-.content-section .content .button a{
-    padding:9px 30px;
-}
-.content-section .social{
-    text-align: center;
 }
 
-}
+/*Responsive Media Queries( Start-> )*/
+
+

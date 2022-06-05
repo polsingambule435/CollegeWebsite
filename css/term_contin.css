@@ -12,7 +12,7 @@ body{
   font-family: 'Jost', sans-serif;
 }
 
-.terms-box{
+.terms-box{ 
   border: 1px solid #fff;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -83,3 +83,54 @@ body{
     background: linear-gradient(120deg,#ffcc00,#ff3900);
     cursor: pointer;
   }
+
+/*Responsive Media Queries( Start-> )*/
+@media screen and (min-width:992px) and (max-width:1200px){
+.terms-box {
+    max-width: 600px;
+    margin: 25px 20px;
+  }
+  .terms-text h1 {
+    font-size: 25px;
+}
+.terms-box p {
+    font-size: 16px;
+}
+.buttons .btn button {
+    color: #fff;
+    padding: 8px 40px;
+    font-size: 15px;
+}
+}
+@media screen and (min-width:750px) and (max-width:991px){
+.terms-box {
+    margin: 25px 20px;
+}
+  .terms-text h1 {
+    font-size: 25px;
+}
+.terms-box p {
+    font-size: 16px;
+}
+}
+@media screen and (max-width:749px){
+.terms-text h1 {
+    font-size:18px;
+  }
+  .terms-box p {
+    font-size: 15px;
+}
+.terms-box h4 {
+    font-size: 10px;
+}
+.buttons .btn button {
+    padding: 6px 30px;
+    font-size: 12px;
+}
+.terms-box {
+    margin: 20px 25px;
+}
+}
+
+/*Responsive Media Queries( Start-> )*/
+
