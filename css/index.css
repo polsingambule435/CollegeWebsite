@@ -752,7 +752,7 @@ button#scroll_btn img {
     font-size: 15px;
   }
   i.bx.bx-menu {
-    margin-left: -30px;
+    margin-left: -15px;
 }
 .menu_buttons {
     margin-right: -60px;
@@ -770,10 +770,11 @@ button#scroll_btn img {
     top: 0;
     left: -100%;
     display: block;
-    max-width: 270px;
+    max-width:unset;
     width: 100%;
+    height: 100%;
     background:  #ffcc00;
-    line-height: 50px;
+    line-height:40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
@@ -1104,16 +1105,19 @@ img.footer_logo {
   }
 img.college-logo-img {
     margin: 10px 0px 10px 0px;
-        height: 80px;
+    height: 80px;
 }
-  .social-icon-header {
-    right: 6rem;
+.social-icon-header {
+    right: 5rem;
     top: 8.5rem;
-  }
-  .header-contant h1 {
+    position: unset;
+    margin-top: -60px;
+    text-align: center;
+}
+.header-contant h1 {
     font-size: 30px;
     margin: 0 auto;
-    padding: 50px 0px 20px;
+    padding: 0px 0px 60px;
 }
 .menu_buttons {
     margin-right: -25px;
@@ -1202,7 +1206,7 @@ img.college-logo-img {
     font-size: 14px;
 }
 nav .navbar .nav-links {
-    top: 21.5rem;
+    top:18.9rem;
     }
     .side-menu a {
     padding: 5px 5px;
@@ -1213,6 +1217,9 @@ nav .navbar .nav-links {
   }
   .r-footer li h2 {
     font-size: 16px;
+}
+section.side_menu {
+    display: none;
 }
 }
 @media screen and (max-width:320px){
@@ -1247,13 +1254,9 @@ i.bx.bx-menu {
 nav .navbar .nav-links {
     top: 21.5rem;
     }
-        .side-menu a {
-    padding: 5px 5px;
-    font-size: 14px;
-  }
-  .side-menu a i {
-    font-size: 15px;
-  }
+section.side_menu {
+    display: none;
+}
 
 }
 
