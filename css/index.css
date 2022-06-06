@@ -75,6 +75,10 @@ img.college-logo-img {
 					text-decoration: none;
 					color: #fff;
 					}
+.socialinformation a:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
 .header-contant{
 				display: flex;
         background-image: url('../images/header_back.gif');
@@ -252,6 +256,10 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
+nav .navbar .links li a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
 .menu_buttons a button{
     background:linear-gradient(120deg,#ff3900,#ffcc00);
     border: none;
@@ -281,6 +289,7 @@ nav .navbar .links li:hover .js-sub-menu{
        background-image:none;
 			 background-color: #6DDACF;
 			 color: #000;
+       transition: 1s;
 			}
 
 i.fa-brands.fa-facebook-f {
@@ -385,13 +394,12 @@ i.fa-brands.fa-facebook-f {
         padding: 30px;
         border-radius: 50px;
         background: #18F4E3;
-		    //-webkit-animation: flip-scale-down-ver 0.5s linear both;
-        //animation: flip-scale-down-ver 0.5s linear both;
    }
 
   .icon_review_section:hover{
           -webkit-animation: flip-scale-down-ver 0.5s linear both;
-          animation: flip-scale-down-ver 0.5s linear both;
+          animation: flip-scale-down-ver 0.9s linear both;
+          cursor: pointer;
    }
    .review_heading {
     text-align: center;
@@ -468,6 +476,79 @@ i.fa-brands.fa-facebook-f {
   padding: 5px 5px;
   color: #08645D;
 }
+/* Review Section > */
+.review_section{
+  background: linear-gradient(120deg,#ff3900,#ffcc00);
+}
+
+
+.review_wrapper h1{
+  font-size: 52px;
+  padding-top: 50px;
+  margin-bottom: 90px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin:10px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+  box-shadow: 1px 5px 40px -16px rgb(0 0 0 / 65%);
+}
+.team .team_member:hover{
+  transition: 1s;
+  box-shadow: 1px 1px 8px 4px rgb(0 0 0);
+}
+.team .team_member .team_img{
+  box-shadow: 1px 1px 8px 4px rgb(0 0 0);
+}
+
+
+.team .team_member h3{
+  color: #ff3900;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #65b3ac;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+/*Review Section < */
 /*Footer (>)*/
 *, *:before, *:after {
 box-sizing: border-box;
@@ -607,6 +688,7 @@ flex: 2 0px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 .card:hover{
+  transition: 1s;
   height: 470px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
@@ -1085,6 +1167,9 @@ nav .navbar .nav-links {
   .top_student_section{
     margin-bottom: 0px;
   }
+  .team .team_member {
+    margin-bottom:100px;
+}
   .footer li {
     line-height:1.7em;
 }
@@ -1203,6 +1288,46 @@ img.college-logo-img {
     font-size: 14px;
 }
 .marquee {
+    font-size: 14px;
+}
+.team .team_member {
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom:100px;
+    width: 100%;
+    padding: 20px;
+
+}
+.team {
+    display: block;
+    justify-content: center;
+    width: unset;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0px 35px;
+    padding-bottom: 1px;
+}
+.team .team_member .team_img {
+    width: 80px;
+    height: 80px;
+    }
+.team .team_member .team_img img {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+.review_wrapper h1 {
+    font-size: 40px;
+    margin-bottom: 80px;
+    }
+    .team .team_member h3 {
+    font-size: 22px;
+    margin-top: 30px;
+}
+.team .team_member p.role {
+    font-size: 11px;
+    }
+.team_member p {
     font-size: 14px;
 }
 nav .navbar .nav-links {
