@@ -4,7 +4,7 @@
 	<title>Forgotten Page</title>
 	<link rel = "icon" href ="images/logo.png" type = "Images/x-icon">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Joan&family=Jost&family=Montserrat:wght@300;700&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -12,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
 }
 body {
     background-image: url("images/other_back.jpg");
@@ -30,15 +31,15 @@ body {
 
 .form-container .form-wrap {
     background: #eee;
-    width: 25%;
-    height: 350px;
+    width: 22%;
+    height: 340px;
     padding: 8% 0px;
     border-radius: 5px;
 }
 
 .form-container .form-wrap h2 {
     text-align: center;
-    margin: -72px 0px 100px;
+    margin: -40px 0px 70px;
     font-size: 22px;
 }
 
@@ -63,8 +64,8 @@ outline: none;
     justify-content: center;
 }
 .form-container .form-wrap .form-submit input[type="submit"] {
-    margin-top: 15px;
-    padding: 5px 50px;
+    margin-top: 25px;
+    padding: 8px 50px;
     border: none;
     border-radius: 2px;
     background: linear-gradient(120deg,#ff3900,#ffcc00);
@@ -75,6 +76,56 @@ outline: none;
 .form-container .form-wrap .form-submit input[type="submit"]:hover{
 background: linear-gradient(120deg,#ffcc00,#ff3900);
 }
+.rembrd_text {
+    text-align: center;
+    margin-top: 10px;
+}
+.rembrd_text a span {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Responsive Media Queries( Start-> )*/
+
+@media screen and (min-width:1600px){
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+.form-container .form-wrap {
+    width: 26%;
+    height: 300px;
+}
+}
+@media screen and (min-width:750px) and (max-width:991px){
+.form-container .form-wrap {
+    width: 32%;
+    height: 300px;
+}
+.form-container .form-wrap h2 {
+    text-align: center;
+    margin: -15px 0px 60px;
+    font-size: 22px;
+}
+}
+@media screen and (max-width:749px){
+.form-container .form-wrap {
+    width:65%;
+    height:270px;
+}
+.form-container .form-wrap h2 {
+    text-align: center;
+    margin: 0px 0px 50px;
+    font-size: 22px;
+}
+.form-container .form-wrap .form-submit input[type="submit"] {
+    margin-top: 25px;
+    padding: 5px 40px;
+    font-size: 15px;
+    }
+}
+
+/*Responsive Media Queries( Start-> )*/
+
 </style>
 <body>
 
@@ -85,8 +136,12 @@ background: linear-gradient(120deg,#ffcc00,#ff3900);
             <input id="text_wrpr" name="text" type="text" placeholder="Enter Email" />
         </div>
         <div class="form-submit">
-            <input id="submit_btn" name="submit" type="submit" value="Send" />
+            <input id="submit_btn" name="submit" type="submit" value="Send"/>
         </div>
+        <div class="rembrd_text">
+            <a href="login.html"><span>Oh I remembered !</span></a>
+        </div>
+        
     </form>
 </div>
 
