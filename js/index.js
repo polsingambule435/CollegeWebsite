@@ -1,12 +1,12 @@
 // New Window Open File >
 function about_page() {
-  window.open("about_us/about.html");
+  window.open("./about.html");
 }
 function log_in_page() {
-  window.open("log_in/login.html");
+  window.open("./login.html");
 }
 function registration_page() {
-  window.open("registration/registration.html");
+  window.open("./registration.html");
 }
 function location_page() {
   window.open("https://g.page/GHRCE?share");
@@ -25,16 +25,6 @@ function instagram_page() {
 }
 // New Window Open File <
 
-// slider >
-    $('.logo-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        autoplayspeed: 2000,
-        infiniite: true
-    });
-// slider <
 
 // Toggle Button >
     $(".toggle-btn").click(function(){
@@ -42,42 +32,6 @@ function instagram_page() {
       $(this).toggleClass("fa-chevron-right");
     });
 // Toggle Button <
-// slider >
-  $('.bslider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  arrows: false,
-  autoplaySpeed: 3000,
-  loop:true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-}); 
-// slider <
-   new WOW().init();  
+
+
+
