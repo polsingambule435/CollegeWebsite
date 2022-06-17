@@ -89,10 +89,11 @@ img.college-logo-img {
         background-position: 0px;
 			}
 .header-contant h1 {
-            color: #fff;
+            color: #000;
     				font-family: 'Jost', sans-serif;
     				font-size: 45px;
     				margin: 40px 25px;
+            text-shadow: 2px 2px #18f4e3;
 }
 
 nav{
@@ -283,7 +284,8 @@ nav .navbar .links li a:hover {
 						margin: 13px 5px;
 						border-radius: 50px;
 						padding: 8px 8px;
-						color: #000;	  
+						color: #000;	
+            box-shadow: 1px 1px 1px 1px;  
 }
 .social-icon-header i:hover{
        cursor: pointer;
